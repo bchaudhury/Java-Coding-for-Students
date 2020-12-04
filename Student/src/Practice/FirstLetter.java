@@ -15,14 +15,13 @@ public class FirstLetter {
 		char ch;
 
 		int l = str.length();
-		System.out.println(l);
 		
 		for (int i=0; i<l-1 ; i++)
 		{
 			if (i==0)
 			{
 				ch = str.charAt(i);
-				System.out.print(ch + ", ");
+				System.out.print(Character.toUpperCase(ch) + ", ");
 			}
 			
 			if (i>0) 
