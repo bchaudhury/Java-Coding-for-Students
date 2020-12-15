@@ -8,7 +8,7 @@ public class SumPrimeNumbers {
 		int sum = 0, result;
 		boolean b = false;
 		
-		for (int i = 1; i<=100; i++)
+		for (int i = 1; i<=200; i++)
 		{
 			b = false;
 			// identify prime number
@@ -17,9 +17,11 @@ public class SumPrimeNumbers {
 				result = i%j;
 				if (result == 0)
 					b = true;
+				if (b == true)
+					break;
 			}
 			// sum prime number
-			if (b == false && i!=1) {
+			if (b == false && i>1) {
 				sum = sum + i;
 			}
 		}

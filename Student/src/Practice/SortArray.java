@@ -5,7 +5,7 @@ public class SortArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int[] array = {15, 6 , 3, 28, 10, 5, 25};
+		int[] array = {15, 6 , 3, 28, 10, 5, 25, 16};
 		int j = array.length;
 		int k;
 		int count = 0;
@@ -27,7 +27,10 @@ public class SortArray {
 			
 		for (int n=0; n<j; n++)
 		{
-			System.out.println(array[n]);
+			if (n==0)
+			   System.out.println(array[n]);
+			else if (n==j-1)
+			   System.out.println(array[n]);
 		}
 		
 		array = null;
