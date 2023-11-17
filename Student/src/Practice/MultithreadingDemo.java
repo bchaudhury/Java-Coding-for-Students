@@ -27,7 +27,7 @@ public class MultithreadingDemo
 { 
 	public static void main(String[] args) 
 	{ 
-		int n = 8; // Number of threads 
+		int n = 6; // Number of threads 
 		for (int i=0; i<n; i++) 
 		{ 
 			Thread object = new Thread(new Multithread()); 
