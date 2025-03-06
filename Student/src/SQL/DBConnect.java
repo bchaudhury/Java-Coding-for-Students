@@ -1,6 +1,7 @@
-package Practice;
-
 // Attach external library mysql-connector-j-9.2.2.jar or latest version
+package SQL;
+
+
 
 import java.sql.*;
 
