@@ -23,13 +23,14 @@ public class DBConnect {
             Statement st = con.createStatement();
             
             // Execute a query
-            String sql = "SELECT * FROM customers";
+            String sql = "SELECT * FROM supplier";
             ResultSet rs = st.executeQuery(sql);
             
             // Process the results
             while (rs.next()) {
                 System.out.println("Name: " + rs.getString("name") +
-                                   ", Address: " + rs.getString("address"));
+                                   ", Address: " + rs.getString("address") +
+                                   ", Phone: " + rs.getLong("mobile"));
             }
             
             // Close resources
