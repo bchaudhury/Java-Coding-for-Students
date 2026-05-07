@@ -1,0 +1,40 @@
+package Practice;
+
+import java.util.Scanner;
+
+public class FirstLetter {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter String" + "\n");
+		String str = sc.nextLine();
+		str = str.trim();
+		boolean abc = false;
+		char ch;
+
+		int l = str.length();
+
+		for (int i = 0; i < l; i++) {
+			if (i == 0) {
+				ch = str.charAt(i);
+				System.out.print(Character.toUpperCase(ch) + ", ");
+			}
+
+			if (i > 0) {
+				ch = str.charAt(i);
+				abc = Character.isWhitespace(ch);
+				if (abc == true && i + 1 < l) {
+					ch = str.charAt(i + 1);
+					System.out.print(Character.toUpperCase(ch) + ", ");
+				}
+
+			}
+
+		}
+
+		sc.close();
+
+	}
+
+}
